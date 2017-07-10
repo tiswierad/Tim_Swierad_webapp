@@ -1,0 +1,130 @@
+
+<div class='container my-custom-container' style='margin-top: 65px;'>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="card">
+				<img class="card-img-top"
+					src="https://lh3.googleusercontent.com/-4SrHYbEP1IE/AAAAAAAAAAI/AAAAAAAAADM/FDiWwAwv9hI/photo.jpg"
+					alt="Card image cap">
+				<div class="card-block">
+					<h4 class="card-title">Timothy Swierad</h4>
+					<p class="card-text">Experienced Infrastructure Developer with
+						a demonstrated history of working in the financial services
+						industry. Strong engineering professional with a BS focused in
+						Applied Networking And System Administration from Rochester
+						Institute of Technology and currently working on obtaining a
+						Masters in Computer Science from Stevens Institute of Technology.
+						Looking to relocate to the Denver/Salt Lake City areas.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">
+						<address>
+							<b>Location:</b><br>Hoboken, NJ 07030
+						</address>
+					</li>
+				</ul>
+				<div class="card-block">
+					<a href="#" class="card-link">Card link</a> <a href="#"
+						class="card-link">Another link</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-9">
+			<div class="card">
+				<h6 class="card-header">Objective</h6>
+				<div class="card-block">
+					<p class="card-text">To obtain a position of Software Developer
+						where I may be able to employ my skills in developing software
+						applications in a fast paced mission critical environment Looking
+						to relocate to the Denver area.</p>
+				</div>
+			</div>
+			<br>
+			<div class="card">
+				<h6 class="card-header">Professional Expierence</h6>
+				<div class="card-block">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">
+							<h5>
+								J.P. Morgan Chase, Jersey City, NJ <small class="text-muted">Associate
+									Infrastructure Developer - Enterprise Computing Services</small>
+							</h5>
+							<ul>
+								<li>Responsible for converting multiple internal legacy PHP based
+									applications to Java using the Spring Boot and Hibernate
+									frameworks. This allowed us to correct security vulnerabilities
+									as well as migrate to JPMC's internal private cloud based on
+									Cloud Foundry.</li>
+								<li>Primary developer on Seemore web dashboard which
+									provides real time health and IPL status of entire Mainframe
+									environment as well detailed historical start and stop times of
+									each Logical Partition (LPAR).</li>
+								<li>Currently leading a team of five coworkers tasked with
+									remediating vulnerabilities found in internally written
+									applications. This includes preventing cross site scripting,
+									SQL injection, and service account credentials stored in plain
+									text.</li>
+								<li>Particiapte in code reviews to ensure quality code that
+									meets firm standards and best practices.</li>
+								<li>Member of the zSeries Mainframe Level 3 Automation team
+									responsible for designing and developing event driven, time of
+									day, or manually started automation processes.</li>
+								<li>Analyze and design improvements to automation
+									controlling IPL (initial program load) process to reduce IPL
+									times and manual operator intervention</li>
+								<li>Participate in 24x7 on call rotation. Act as primary
+									point of contact for incident response and resolution and
+									support weekend changes and major software releases.</li>
+								<li>Worked on a fast paced team handling multiple projects
+									spanning multiple platforms and languages.</li>
+								<li>Balanced working 40+ hrs a week while pursuing a
+									Masters in Computer Science part time.</li>
+
+							</ul>
+						</li>
+						<li class="list-group-item">
+							<h5>
+								J.P. Morgan Chase, Jersey City, NJ <small class="text-muted">Associate
+									Infrastructure Engineer Intern - Enterprise Computing Services</small>
+							</h5>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<div class="card">
+				<h6 class="card-header">Education</h6>
+				<div class="card-block">
+					
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<br>
+			<div class="card">
+				<h6 class="card-header">Skills</h6>
+				<div class="card-block">
+					<table class="table">
+						<tr *ngFor = "let c of data">
+							<td class="badge-skill" >{{ c.category }}  </td>
+							<td >
+								<span class="badge badge-default badge-skill" *ngFor="let skill of c.skills" style="margin:2px;">{{ skill.name }}</span>
+								
+							</td>
+						</tr>
+						
+					</table>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<hr>
+
+	<footer class="footer">
+		<p>Tim Swierad 2017</p>
+	</footer>
+</div>
