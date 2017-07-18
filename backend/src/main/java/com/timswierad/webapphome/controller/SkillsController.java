@@ -1,25 +1,19 @@
 package com.timswierad.webapphome.controller;
 
-import com.timswierad.webapphome.model.Greeting;
-import com.timswierad.webapphome.model.Skill;
 import com.timswierad.webapphome.model.SkillCategory;
-import com.timswierad.webapphome.model.User;
 import com.timswierad.webapphome.repository.ResumeSkillRepo;
-import com.timswierad.webapphome.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class SkillsController {
 
-    private static final String template = "Hello2, %s!";
+
     private final AtomicLong counter = new AtomicLong();
 
     @Autowired

@@ -1,4 +1,4 @@
-package com.timswierad.webapphome.Database;
+package com.timswierad.webapphome.database;
 
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
@@ -16,10 +16,5 @@ public class MongoConfig extends AbstractMongoConfiguration {
     @Override
     public Mongo mongo() throws Exception {
         return new MongoClient("192.168.7.11", 27017);
-    }
-  
-    @Override
-    protected String getMappingBasePackage() {
-        return "come.timswierad.webapphome";
     }
 }
