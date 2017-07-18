@@ -15,6 +15,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.greetingService.getGreeting().subscribe(
-      data =>{console.log(data); this.title = data.content;});
+      data =>  {console.log(data); this.title = data.content; });
   }
 }

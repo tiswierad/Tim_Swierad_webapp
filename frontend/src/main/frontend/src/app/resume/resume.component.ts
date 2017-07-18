@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeskillsService } from '../shared/resumeskills/resumeskills.service';
+import { ProfexpService } from '../shared/profexp/profexp.service';
 
 @Component({
   selector: 'app-resume',
@@ -8,16 +9,17 @@ import { ResumeskillsService } from '../shared/resumeskills/resumeskills.service
 })
 export class ResumeComponent implements OnInit {
 
-  data;
+  skillsData;
+  profExpData;
 
   constructor(
-    private resumeskillsService: ResumeskillsService
+    private resumeskillsService: ResumeskillsService,
+    private profexpService: ProfexpService
   ) { }
 
   ngOnInit() {
-    this.resumeskillsService.getAllSkills().subscribe(
-      data =>  {this.data = data; } );
-    console.log(this.data);
+    this.resumeskillsService.getAllSkills().subscribe( skillsData =>  {this.skillsData = skillsData; } );
+    this.profexpService.getAllExp().subscribe(profData => {this.profExpData = profData; } );
   }
 
 }

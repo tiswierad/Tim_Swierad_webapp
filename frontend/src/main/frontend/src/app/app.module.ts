@@ -11,9 +11,16 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ResumeComponent } from './resume/resume.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { GreetingService} from './shared/greeting.service';
 import { ResumeskillsService} from './shared/resumeskills/resumeskills.service';
+import { ProfexpService} from './shared/profexp/profexp.service';
+import { HealthService} from './shared/health/health.service';
+import { CarouselitemsService} from './shared/carouselitems.service';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { CarouselComponent } from './carousel/carousel.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +29,10 @@ import { ResumeskillsService} from './shared/resumeskills/resumeskills.service';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    ResumeComponent
+    ResumeComponent,
+    DashboardComponent,
+    BreadcrumbComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +42,10 @@ import { ResumeskillsService} from './shared/resumeskills/resumeskills.service';
     NgbModule.forRoot()
   ],
   providers: [GreetingService,
-              ResumeskillsService],
+              ResumeskillsService,
+              ProfexpService,
+              HealthService,
+              CarouselitemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

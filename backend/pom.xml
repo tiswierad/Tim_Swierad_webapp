@@ -5,7 +5,7 @@
 
 
 	<artifactId>backend</artifactId>
-
+    <packaging>war</packaging>
 
 	<name>backend</name>
 	<description>Backend project for timswierad.com</description>
@@ -15,7 +15,9 @@
 		<artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
+    <properties>
+        <start-class>com.timswierad.webapphome</start-class>
+    </properties>
 	<dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -41,6 +43,15 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+     <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
